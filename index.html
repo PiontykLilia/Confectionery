@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angel cakes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Angel cakes</h1>
+        <h2>Кондитерська</h2>
+    </header>
+    <nav>
+        <a href="#about_us">Про нас</a>
+        <a href="#offers">Пропозиції</a>
+        <a href="#response">Відгуки</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+    <img src="images/interior.jpg" alt="interior" width="500" height="340" />
+    <article id="about_us">
+        <h1>Про нас</h1>
+        <p>Затишна кав'ярня в центрі Львова із задоволенням почастує своїх відвідувачів <br> оригінальною випічкою власного виробництвата та свіжозмеленою ароматною кавою.</p>
+        <img src="images/makaruns.jpg" alt="makaruns" width="500" height="340" />
+        <p>Якщо ви хочете затишно відпочити та приємно провести час,<br> скуштувати щось смачненьке та особливе - ласкаво просимо до нашого закладу!</p>
+    </article>
+    <article id="offers">
+        <h1>Пропозиції</h1>
+        <figure>
+            <img src="images/coffee.jpg" alt="coffee/" width="500" height="340" />
+            <figcaption>
+                <h2><b>Найсмачніша кава</b></h2>
+                <p>Дуже смачна ароматна кава, на буд-який смак.<br> У нас в меню є міцне еспрессо, американо, латте, раф, какао,<br> капучино, флет вайт, а також кава на мигдальному та соєвому молоці.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/cake1.jpg" alt="Cake/" width="500" height="340" />
+            <figcaption>
+                <h2><b>Торти на замовлення</b></h2>
+                <p>У нашій кондитерській ви можете замовити будь-який торт з нашого каталогу, або вибрати свій дизайн.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/candybar.jpg" alt="candybar/" width="500" height="340" />
+            <figcaption>
+                <h2><b>Кенді бари на замовлення</b></h2>
+                <p>Оформляємо кенді бари на святах (весілля, день народження, ювілеї, хрестини і т.д.) за вашими побажаннями.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/cheesecake.jpg" alt="cheesecake/" width="500" height="340" />
+            <figcaption>
+                <h2><b>Чізкейки</b></h2>
+                <p>Величезниий вибір чізкейків, кожен з них вартий уваги, потрібно спробувати всі!</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/breakfast.jpg" alt="breakfast/" width="500" height="340" />
+            <figcaption>
+                <h2><b>Смачні сніданки</b></h2>
+                <p>Різноманіття сніданків, кожен зможе вибрати варіант для себе.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/sweets.jpg" alt="sweets/" width="500" height="340" />
+            <figcaption>
+                <h2><b>Великий вибір десертів</b></h2>
+                <p>Найкращі десерти з різних країн світу: крем-брюле, тірамісу, шоколодний фондан, панакота, тарта де Сантьяго, Баноффі пай, торт "Захер" і багато інших. </p>
+            </figcaption>
+        </figure>
+    </article>
+    <article id="response">
+        <h1>Відгуки</h1>
+        <form id="feedback" method="post" action="https://formspree.io/pyontiklilia98@gmail.com">
+            <fieldset>
+                <label>Ім'я користувача:<input type="text" name="user-name" /></label>
+                <br>
+                <label for="email-input">Email користувача:</label>
+                <input type="email" name="user-email" id="email-input" />
+                <br>
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="user-message" rows="7" cols="30"></textarea>
+                <br>
+                <input type="submit" value="Надіслати">
+            </fieldset>
+        </form>
+    </article>
+    <article id="contacts">
+        <h1>Контакти</h1>
+        <p>+38(067)335 43 45</p>
+        <p>м. Львів вул. Городоцька,10 </p>
+        <p>Angel.cakes@gmail.com</p>
+    </article>
+    <footer>
+        <hr>
+        <p>Published <time datetime="2019-02-24">24/02/2019</time></p>
+    </footer>
+</body>
+</html>
