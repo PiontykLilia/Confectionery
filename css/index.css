@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Play&subset=cyrillic');
+
+:root{
+    font-family: "Play", sans-serif;
+    --main-font-color: black;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+header nav .logo {
+    font-family: 'Gabriela', serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+}
+
+header nav .menu li {
+    list-style-type: none;
+}
+
+header nav .menu {
+    padding: 0;
+    justify-content: space-around;
+}
+
+
+header nav .menu a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    text-transform: uppercase;
+}
+
+header nav .menu a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 480px) {
+    header nav {
+        display: flex;
+}
+        
+         header nav .menu {
+        flex: 1;    
+    }
+    
+    header .banner {
+    background-image: url(../img/interior.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
