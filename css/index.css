@@ -2,7 +2,8 @@
 
 :root{
     font-family: "Play", sans-serif;
-    --main-font-color: black;
+    --main-font-color: #0a7a5a;
+    background-color: #cbe8ba;
 }
 
 body {
@@ -12,13 +13,14 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+    margin: 15px;
 }
 
 header nav .logo {
     font-family: 'Gabriela', serif;
     font-size: 2.5rem;
     text-align: center;
+    color: var(--main-font-color);
 }
 
 header nav .menu {
@@ -30,7 +32,7 @@ header nav .menu li {
 }
 
 header nav .menu {
-    padding: 0;
+    padding: 15px;
     justify-content: space-around;
 }
 
@@ -59,4 +61,5 @@ header nav .menu a:hover {
     background-size: cover;
     background-position: center;
     min-height: 500px;
+}
 }

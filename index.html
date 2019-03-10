@@ -20,7 +20,7 @@
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-       <div class="banner">
+        <div class="banner">
         </div>
     </header>
     <article id="about_us">
@@ -74,22 +74,21 @@
             </figcaption>
         </figure>
     </article>
-    <article id="response">
+ 
+
+    
+<article id="response">
         <h1>Відгуки</h1>
-        <form id="feedback" method="post" action="https://formspree.io/pyontiklilia98@gmail.com">
-            <fieldset>
-                <label>Ім'я користувача:<input type="text" name="user-name" /></label>
-                <br>
-                <label for="email-input">Email користувача:</label>
-                <input type="email" name="user-email" id="email-input" />
-                <br>
-                <label for="message">Ваше повідомлення:</label>
-                <textarea id="message" name="user-message" rows="7" cols="30"></textarea>
-                <br>
-                <input type="submit" value="Надіслати">
-            </fieldset>
+        <form class="feedback">
+            <label>Ваше ім'я: <input type="text" name="name"></label>
+            <label>Ваш відгук: <input type="text" response="response"></label>
+            <input type="submit">
         </form>
-    </article>
+        <div class="server-response"></div>
+</article>
+
+<script src="js/index.js"></script>
+
     <article id="contacts">
         <h1>Контакти</h1>
         <p>+38(067)335 43 45</p>
