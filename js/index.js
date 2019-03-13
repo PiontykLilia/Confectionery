@@ -9,3 +9,11 @@ function submitForm(e) {
         .then( response => response.text() )
         .then( html => document.querySelector('.server-response')
 .innerHTML = html );
+}
+
+
+const clockPlaceholder = document.querySelector('.clock');
+setInterval( () => clockPlaceholder.innerText = (new Date()).toLocaleTimeString() ,
+  1000);
+  
+  
