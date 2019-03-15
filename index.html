@@ -16,10 +16,10 @@
             <nav>
                 <p class="logo">Angel cakes</p>
                 <ul class="menu">
-                    <li><a href="#about_us">Про нас</a></li>
-                    <li><a href="#offers">Пропозиції</a></li>
-                    <li><a href="#response">Відгуки</a></li>
-                    <li><a href="#contacts">Контакти</a></li>
+                    <li><a class="smooth" href="#about_us">Про нас</a></li>
+                    <li><a class="smooth" href="#offers">Пропозиції</a></li>
+                    <li><a class="smooth" href="#response">Відгуки</a></li>
+                    <li><a class="smooth" href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
             <div class="banner">
@@ -49,7 +49,7 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                </div>
+            </div>
         </header>
 
         <article id="about_us">
@@ -59,16 +59,16 @@
             <p class="text">Якщо ви хочете затишно відпочити та приємно провести час,<br> скуштувати щось смачненьке та особливе - ласкаво просимо до нашого закладу!</p>
         </article>
         <article id="offers">
-            <h1>Пропозиції</h1>
+            <h1>Пропозиції:</h1>
             <figure>
                 <img src="images/coffee.jpg" alt="Кава" width="500" height="340" />
                 <figcaption>
-                <h2><b>Найсмачніша кава</b></h2>
-                <p class="text">Дуже смачна ароматна кава, на буд-який смак.<br> У нас в меню є міцне еспрессо, американо, латте, раф, какао,<br> капучино, флет вайт, а також кава на мигдальному та соєвому молоці.</p>
+                    <h2><b>Найсмачніша кава</b></h2>
+                    <p class="text">Дуже смачна ароматна кава, на буд-який смак.<br> У нас в меню є міцне еспрессо, американо, латте, раф, какао,<br> капучино, флет вайт, а також кава на мигдальному та соєвому молоці.</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/cake1.jpg" alt="Торт" width="500" height="340" />
+                <img src="images/cake.jpg" alt="Торт" width="500" height="340" />
                 <figcaption>
                     <h2><b>Торти на замовлення</b></h2>
                     <p class="text">У нашій кондитерській ви можете замовити будь-який торт з нашого каталогу, або вибрати свій дизайн.</p>
@@ -105,12 +105,47 @@
         </article>
         <article id="response">
             <h1>Відгуки</h1>
-            <form class="feedback">
-                <label>Ваше ім'я: <input type="text" name="name"></label>
-                <label>Ваш відгук: <input type="text" response="response"></label>
-                <input type="submit">
-            </form>
-            <div class="server-response"></div>
+            <div class="inner_contact">
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" method="post" action="#">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+                            <label>Ваше ім'я:<input type="text" name="name" id="name" required="required" class="form" placeholder="Name" /></label>
+                            <!-- Email -->
+                            <label>Email:<input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" /></label>
+                        </div>
+                        <!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <label>Ваш відгук:<textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea></label>
+                        </div>
+                        <!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Надіслати</button>
+                        </div>
+                        <!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
+
+                    <!-- Your Mail Message -->
+                    <div class="mail-message-area">
+                        <!-- Message -->
+                        <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Contact Form Area -->
+            </div>
+            <!-- End Inner -->
         </article>
 
         <article id="contacts">
@@ -124,23 +159,22 @@
             <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/ru/">embedgooglemaps RU</a> & <a href="https://iamsterdamcard.it">iamsterdamcard.it</a></small></div>
             <style>
                 #gmap_canvas img {
-                    max-width: none!important;
+                    max-width: 100%!important;
                     background: none!important
                 }
             </style>
         </div><br/>
         <footer>
             <hr>
-            <div class="clock"></div>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-            <script src="js/index.js"></script>
             <p class="text">Published <time datetime="2019-02-24">24/02/2019</time></p>
         </footer>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 
 </html>
